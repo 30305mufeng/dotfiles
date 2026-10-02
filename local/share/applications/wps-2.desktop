@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/bin/wps
+MimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+Name=wps
+NoDisplay=true
+Type=Application

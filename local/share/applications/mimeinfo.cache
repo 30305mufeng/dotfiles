@@ -1,0 +1,7 @@
+[MIME Cache]
+application/pdf=wpspdf-2.desktop;wpspdf-3.desktop;wpspdf-4.desktop;wpspdf-5.desktop;wpspdf.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=wps-2.desktop;wps.desktop;
+application/wps-office.xlsx=wps.orig.desktop;
+application/x-extension-iml=android-studio.desktop;
+image/png=grap2graph-2.desktop;grap2graph.desktop;gwenview-2.desktop;gwenview-3.desktop;gwenview-4.desktop;gwenview-5.desktop;gwenview-6.desktop;gwenview.desktop;
+x-scheme-handler/wemeet=wemeetapp.desktop;

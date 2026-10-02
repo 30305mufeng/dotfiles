@@ -29,8 +29,8 @@ Arch Linux + Hyprland (HyDE) 桌面环境配置, 用于快速迁移到新机器�
 │                            #    dunst, fastfetch, fcitx5, wlogout, swaylock,
 │                            #    swappy, qt5ct, qt6ct, gtk-3.0, xsettingsd,
 │                            #    mimeapps.list, *-flags.conf ...)
-├── home/                    # -> ~/  (.zshrc, .vimrc, .vim/)
-└── local/share/             # -> ~/.local/share/  (bin: HyDE 脚本, fonts: 字体)
+├── home/                    # -> ~/  (.zshrc, .vimrc, .vim/, .gitconfig, .ssh/config)
+└── local/share/             # -> ~/.local/share/  (bin: HyDE 脚本, fonts: 字体, applications: 自定义桌面项)
 ```
 
 ## 新机器迁移步骤
@@ -93,4 +93,7 @@ git add -A && git commit -m "update: xxx"
 - blur 已在 `userprefs.conf` 中全局关闭 (老 GPU 换性能), 需要时改回 `enabled = true`
 - `~/.themes` (GTK 主题) 与 `~/.icons` (图标/光标) 体积过大未入库, 由 HyDE 安装步骤恢复
 - vim: 插件 (`~/.vim/plugged`) 与 coc 扩展缓存 (`~/.config/coc`) 未入库, 迁移后在 vim 中执行 `:PlugInstall`, coc 扩展首次启动自动安装
+- **ssh 只收录 config, 密钥不入库**: 迁移后需单独拷贝 `~/.ssh/id_ed25519`(及 `.pub`、`*.pem`) 并 `chmod 600`
+- clash 配置含订阅令牌未入库, 迁移时单独拷贝 `~/.config/clash`
+- VS Code / JetBrains 等 IDE 设置属个人状态未入库
 - fcitx5 输入法 env 变量 (`QT_IM_MODULE` / `XMODIFIERS` / `GTK_IM_MODULE`) 在 `hyprland.conf`, 修改后需重新登录

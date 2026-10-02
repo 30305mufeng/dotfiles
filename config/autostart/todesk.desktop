@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=4.1.0
+Encoding=UTF-8
+Name=ToDesk
+Comment=ToDesk Remote Control Software
+Comment[zh_CN]=ToDesk远程控制软件
+Exec=env TODESK_PACK_NAME=com.todesk TODESK_SHOW=false /opt/todesk/bin/todesk
+Icon=todesk
+GenericName=ToDesk Remote Control Software
+GenericName[zh_CN]=ToDesk远程控制软件
+keywords=todesk
+Categories=Network;RemoteControl;
+Type=Application
+Terminal=false

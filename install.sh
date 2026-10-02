@@ -35,12 +35,14 @@ for entry in "$DOT"/config/*; do
     backup_and_link "$entry" "$HOME/.config/$name"
 done
 
-echo "==> 部署 HOME 目录文件 (shell 等)"
+echo "==> 部署 HOME 目录文件 (shell, git, ssh 等)"
 for entry in "$DOT"/home/.[!.]* "$DOT"/home/*; do
     [ -e "$entry" ] || continue
     name="$(basename "$entry")"
     backup_and_link "$entry" "$HOME/$name"
 done
+# ssh 对目录权限有严格要求
+[ -d "$HOME/.ssh" ] && chmod 700 "$HOME/.ssh"
 
 echo "==> 部署 ~/.local/share (脚本与字体)"
 for entry in "$DOT"/local/share/*; do

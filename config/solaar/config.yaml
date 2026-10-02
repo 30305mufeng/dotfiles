@@ -1,0 +1,54 @@
+- 1.1.19
+- _NAME: M720 Triathlon
+  _absent: [hi-res-scroll, lowres-scroll-mode, scroll-ratchet, scroll-ratchet-torque, smart-shift, thumb-scroll-invert, thumb-scroll-mode, onboard_profiles,
+    report_rate, report_rate_extended, dpi, dpi_extended, speed-change, backlight, backlight_level, backlight_duration_hands_out, backlight_duration_hands_in,
+    backlight_duration_powered, backlight-timed, led_control, led_zone_, rgb_control, rgb_zone_, brightness_control, per-key-lighting, fn-swap, disable-keyboard-keys,
+    force-sensing, crown-smooth, divert-crown, divert-gkeys, m-key-leds, mr-key-led, multiplatform, gesture2-gestures, gesture2-divert, gesture2-params,
+    haptic-level, haptic-play, sidetone, equalizer, adc_power_management]
+  _battery: 4096
+  _modelId: B015405E0000
+  _sensitive: {hires-smooth-invert: false, pointer_speed: false, reprogrammable-keys: false}
+  _serial: A8A9094E
+  _unitId: F6013138
+  _wpid: 405E
+  change-host: null
+  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0, 208: 0}
+  hires-scroll-mode: false
+  hires-smooth-invert: false
+  hires-smooth-resolution: true
+  persistent-remappable-keys: null
+  pointer_speed: 400
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 91: 91, 93: 93, 208: 208}
+- _NAME: K580
+  _absent: [hi-res-scroll, lowres-scroll-mode, hires-smooth-invert, hires-smooth-resolution, hires-scroll-mode, scroll-ratchet, scroll-ratchet-torque, smart-shift,
+    thumb-scroll-invert, thumb-scroll-mode, onboard_profiles, report_rate, report_rate_extended, pointer_speed, dpi, dpi_extended, speed-change, backlight,
+    backlight_level, backlight_duration_hands_out, backlight_duration_hands_in, backlight_duration_powered, backlight-timed, led_control, led_zone_, rgb_control,
+    rgb_zone_, brightness_control, per-key-lighting, reprogrammable-keys, persistent-remappable-keys, force-sensing, crown-smooth, divert-crown, divert-gkeys,
+    m-key-leds, mr-key-led, gesture2-gestures, gesture2-divert, gesture2-params, haptic-level, haptic-play, sidetone, equalizer, adc_power_management]
+  _modelId: B35A40890000
+  _sensitive: {hires-scroll-mode: ignore, hires-smooth-invert: ignore, hires-smooth-resolution: ignore}
+  _serial: 722A5D8E
+  _unitId: 14A9BCC7
+  _wpid: '4089'
+  disable-keyboard-keys: {}
+  divert-keys: {189: 0, 209: 0, 210: 0, 212: 0, 224: 0, 228: 0, 229: 0, 230: 0, 231: 0, 232: 0, 233: 0, 254: 0}
+  fn-swap: true
+- _NAME: M720 Triathlon Multi-Device Mouse
+  _absent: [hi-res-scroll, lowres-scroll-mode, scroll-ratchet, scroll-ratchet-torque, smart-shift, thumb-scroll-invert, thumb-scroll-mode, onboard_profiles,
+    report_rate, report_rate_extended, dpi, dpi_extended, speed-change, backlight, backlight_level, backlight_duration_hands_out, backlight_duration_hands_in,
+    backlight_duration_powered, backlight-timed, led_control, led_zone_, rgb_control, rgb_zone_, brightness_control, per-key-lighting, fn-swap, disable-keyboard-keys,
+    force-sensing, crown-smooth, divert-crown, divert-gkeys, m-key-leds, mr-key-led, multiplatform, gesture2-gestures, gesture2-divert, gesture2-params,
+    haptic-level, haptic-play, sidetone, equalizer, adc_power_management]
+  _battery: 4096
+  _modelId: B015405E0000
+  _serial: B00A51E7
+  _unitId: FBC25CF9
+  _wpid: 405E
+  change-host: null
+  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0, 208: 0}
+  hires-scroll-mode: false
+  hires-smooth-invert: false
+  hires-smooth-resolution: true
+  persistent-remappable-keys: null
+  pointer_speed: 256
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 91: 91, 93: 93, 208: 208}

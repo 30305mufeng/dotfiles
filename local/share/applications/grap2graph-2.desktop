@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/bin/grap2graph
+MimeType=image/png;
+Name=grap2graph
+NoDisplay=true
+Type=Application

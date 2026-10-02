@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bits & Bops Demo
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2200650
+Icon=steam_icon_2200650
+Terminal=false
+Type=Application
+Categories=Game;
