@@ -1,0 +1,14 @@
+# ===== 大文件 / 机器相关资源 (不入库, 迁移时单独处理) =====
+# HyDE 主题自带的壁纸集 (可通过重装 HyDE 或手动拷贝恢复)
+config/hyde/themes/*/wallpapers/
+# 当前壁纸指针文件 (二进制, 随切换变动)
+config/hyde/themes/wall.set
+config/hyde/themes/*/wall.set
+
+# HyDE wallbash 生成的缓存 (可重新生成)
+config/hyde/wallbash/Wall-Dcol/
+config/hyde/wallbash/Wall-Ways/
+
+# 运行时状态
+*.log
+*.pid
