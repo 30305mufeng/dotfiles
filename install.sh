@@ -35,14 +35,22 @@ for entry in "$DOT"/config/*; do
     backup_and_link "$entry" "$HOME/.config/$name"
 done
 
-echo "==> 部署 HOME 目录文件 (shell, git, ssh 等)"
+echo "==> 部署 HOME 目录文件 (shell, git 等)"
 for entry in "$DOT"/home/.[!.]* "$DOT"/home/*; do
     [ -e "$entry" ] || continue
     name="$(basename "$entry")"
+    # .ssh 特殊处理: 只链接 config 文件, 密钥必须留在实体目录
+    [ "$name" = ".ssh" ] && continue
     backup_and_link "$entry" "$HOME/$name"
 done
-# ssh 对目录权限有严格要求
-[ -d "$HOME/.ssh" ] && chmod 700 "$HOME/.ssh"
+
+echo "==> 部署 ssh config (仅此文件, 不动密钥)"
+if [ -L "$HOME/.ssh" ] && [ ! -d "$HOME/.ssh/" ]; then
+    rm "$HOME/.ssh"   # 修复历史版本整目录链接的情况
+fi
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
+backup_and_link "$DOT/home/.ssh/config" "$HOME/.ssh/config"
 
 echo "==> 部署 ~/.local/share (脚本与字体)"
 for entry in "$DOT"/local/share/*; do

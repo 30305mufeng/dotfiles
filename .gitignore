@@ -18,6 +18,10 @@ config/obs-studio/profiler_data/
 home/.vim/plugged/
 home/.vim/.netrwhist
 
+# ssh 防线: 除 config 外任何东西 (密钥!) 严禁入库
+home/.ssh/*
+!home/.ssh/config
+
 # 运行时状态
 *.log
 *.pid
