@@ -29,7 +29,7 @@ Arch Linux + Hyprland (HyDE) 桌面环境配置, 用于快速迁移到新机器�
 │                            #    dunst, fastfetch, fcitx5, wlogout, swaylock,
 │                            #    swappy, qt5ct, qt6ct, gtk-3.0, xsettingsd,
 │                            #    mimeapps.list, *-flags.conf ...)
-├── home/                    # -> ~/  (.zshrc)
+├── home/                    # -> ~/  (.zshrc, .vimrc, .vim/)
 └── local/share/             # -> ~/.local/share/  (bin: HyDE 脚本, fonts: 字体)
 ```
 
@@ -92,4 +92,5 @@ git add -A && git commit -m "update: xxx"
 - **NVIDIA 相关**环境变量在 `config/hypr/nvidia.conf` (MX150 无硬件光标等设定); 纯 Intel/AMD 机器可清空该文件
 - blur 已在 `userprefs.conf` 中全局关闭 (老 GPU 换性能), 需要时改回 `enabled = true`
 - `~/.themes` (GTK 主题) 与 `~/.icons` (图标/光标) 体积过大未入库, 由 HyDE 安装步骤恢复
+- vim: 插件 (`~/.vim/plugged`) 与 coc 扩展缓存 (`~/.config/coc`) 未入库, 迁移后在 vim 中执行 `:PlugInstall`, coc 扩展首次启动自动安装
 - fcitx5 输入法 env 变量 (`QT_IM_MODULE` / `XMODIFIERS` / `GTK_IM_MODULE`) 在 `hyprland.conf`, 修改后需重新登录

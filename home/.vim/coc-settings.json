@@ -1,0 +1,46 @@
+{
+  "snippets.ultisnips.pythonPrompt": false
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+            "args": ["--compile-commands-dir=build"]
+        }
+
+        "cmake": {
+      "      command": "cmake-language-server",
+      "      filetypes": ["cmake", "txt"],
+      "      rootPatterns": [
+        "       build/"
+            ],
+      "      initializationOptions": {
+                "buildDirectory": "build"
+            }
+        }
+
+        "protobuf": {
+            "command": "buf",
+            "args": ["beta" ,"lsp"],
+            "filetypes": ["proto"],
+            "rootPatterns": ["buf.yaml", ".git/"],
+            "trace.server": "verbose"
+        }
+        "biome": {
+            "command": "biome",
+            "args": ["lsp-proxy"],
+            "filetypes": ["css", "vue", "json", "javascript", "typescript", "jsonc", "astro", "javascriptreact", "typescriptreact"],
+            "trace.server": "verbose"
+        }
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.work", "go.mod", ".git/"],
+            "filetypes": ["go"],
+            "initializationOptions": {
+                "usePlaceholders": true,
+                "completeUnimported": true,
+                "staticcheck": true
+            }
+        }
+   }
+}

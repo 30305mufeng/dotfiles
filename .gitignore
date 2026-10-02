@@ -9,6 +9,10 @@ config/hyde/themes/*/wall.set
 config/hyde/wallbash/Wall-Dcol/
 config/hyde/wallbash/Wall-Ways/
 
+# vim 插件 (迁移后 :PlugInstall 重装) 与运行时状态
+home/.vim/plugged/
+home/.vim/.netrwhist
+
 # 运行时状态
 *.log
 *.pid
